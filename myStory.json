@@ -1,58 +1,254 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Refresh & Reload",
+    "Credits": "Created by Alyssa Zhang (azhan122@ucsc.edu).",
+    "InitialLocation": "Your room",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Your room": {
+            "Body": "I'm in my room. It's Monday, so I'm the one that needs to go open shop today.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Go out",
+                    "Target": "Room2"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "My desk",
+                    "Target": "Desk"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Room2": {
+            "Body": "Hold it. It feels like I'm missing something important.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Go out(?)",
+                    "Target": "Room2"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Turn back",
+                    "Target": "Your room"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Desk": {
+            "Body": "It's my desk. I've had to put a couple expired coupons there, some old posters there...oh, so that's where my phone went.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Take it",
+                    "Target": "Room3"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Leave it",
+                    "Target": "Your room"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Room3": {
+            "Body": "I've got my key now. That should be everything.",
+            "Choices": [
+                {
+                    "Text": "Head out",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Five more minutes...",
+                    "Target": "Room4"
+                }
+            ]
+        },
+        "Room4": {
+            "Body": "...Seriously, I'm on a bit of a tight schedule right now.",
+            "Choices": [
+                {
+                    "Text": "Head out",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Hallway": {
+            "Body": "This is the second floor of our place. It's where Belle and I usually end up after shifts.",
+            "Choices": [
+                {
+                    "Text": "My room",
+                    "Target": "Room"
+                },
+                {
+                    "Text": "Bathroom",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "Belle's room",
+                    "Target": "Belle's room"
+                },
+                {
+                    "Text": "Downstairs",
+                    "Target": "Downstairs"
+                }
+            ]
+        },
+        "Room": {
+            "Body": "I'm back in my room. But this really isn't the best use of my time right now.",
+            "Choices": [
+                {
+                    "Text": "Go back out",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "I look in the mirror. Same old jacket and graphic tee. I seem a bit tired.",
+            "Choices": [
+                {
+                    "Text": "Leave bathroom",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "...",
+                    "Target": "Bath2"
+                }
+            ]
+        },        
+        "Bath2": {
+            "Body": "...Business's been slowing down, especially with that whole on-demand TV thing lately. All the neighbors say they love to keep stopping by the video store, but...",
+            "Choices": [
+                {
+                    "Text": "Let's maybe stop thinking about that for now.",
+                    "Target": "Downstairs"
+                }
+            ]
+        },
+        "Belle's room": {
+            "Body": "I'm in Belle's room. This place needs some tidying up, but I'm not the one responsible for doing that.",
+            "Choices": [
+                {
+                    "Text": "Leave her room",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Downstairs": {
+            "Body": "It's the first floor of our place.",
+            "Choices": [
+                {
+                    "Text": "Upstairs",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Living room",
+                    "Target": "Living room"
+                },
+                {
+                    "Text": "Kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Front door",
+                    "Target": "Front door"
+                }
+            ]
+        },
+        "Front door": {
+            "Body": "Am I ready to head out?",
+            "Choices": [
+                {
+                    "Text": "No",
+                    "Target": "Downstairs"
+                },
+                {
+                    "Text": "Yes",
+                    "Target": "Outside"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": "There's coffee powder on the counter again; Belle must've been here recently. I also see a cup of something and a note on our table.",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Downstairs"
+                },
+                {
+                    "Text": "Check note",
+                    "Target": "Mocha"
+                }
+            ]
+        },
+        "Mocha": {
+            "Body": "'Imagine not getting up at 8 :) For real tho, don't stress yourself out over this stuff. I tried making mochaccino today, give it a try!' - Belle",
+            "Choices": [
+                {
+                    "Text": "Take a sip",
+                    "Target": "Mocha2"
+                }
+            ]
+        },
+        "Mocha2": {
+            "Body": "It's pretty good. I could usually just buy one from Tins across the street...but this is a nice change of pace.",
+            "Choices": [
+                {
+                    "Text": "Leave kitchen",
+                    "Target": "Down2"
+                }
+            ]
+        },
+        "Down2": {
+            "Body": "There's that mochaccino finished. I hope I won't be late after that.",
+            "Choices": [
+                {
+                    "Text": "Front door",
+                    "Target": "Front2"
+                },
+                {
+                    "Text": "Living room",
+                    "Target": "Living2"
+                },
+                {
+                    "Text": "Kitchen",
+                    "Target": "Late"
+                }
+            ]
+        },
+        "Late": {
+            "Body": "I was already here a second ago.",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Down2"
+                }
+            ]
+        },
+        "Living2": {
+            "Body": "A couple old games and movies. Some of these didn't sell at the shop, so they're ours now.",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Down2"
+                }
+            ]
+        },
+        "Front2": {
+            "Body": "Am I ready to head out?",
+            "Choices": [
+                {
+                    "Text": "No",
+                    "Target": "Down2"
+                },
+                {
+                    "Text": "Yes",
+                    "Target": "Outside"
+                }
+            ]
+        },
+        "Living room": {
+            "Body": "It's our living room. We have some movies and games; a few of these must be considered vintage by now.",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Downstairs"
+                }
+            ]
+        },
+        "Outside": {
+            "Body": "Time to head out. It's been getting rough lately, but for now, someone's got to keep the store going."
         }
     }
 }
